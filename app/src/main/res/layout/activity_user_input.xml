@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Activity.UserInput">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi User"
+        android:textSize="48dp"
+        android:gravity="center"
+        android:layout_marginTop="56dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/font"/>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:hintTextColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#f8f9fa"
+        android:hint="Enter owner name">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username_et"
+            android:textColorHint="@color/black"
+            android:hint="Enter owner name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:hintTextColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#f8f9fa"
+        android:hint="Enter repo name">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/repo_et"
+            android:textColorHint="@color/black"
+            android:hint="Enter repo name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Get Issues"
+        android:textColor="#e9ecef"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/main_bg"
+        app:layout_constraintTop_toBottomOf="@+id/password_til"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</LinearLayout>

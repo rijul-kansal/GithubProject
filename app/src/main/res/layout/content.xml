@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:elevation="16dp"
+    android:padding="3dp"
+    android:layout_margin="16dp">
+    <LinearLayout
+        android:background="@drawable/card_view_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/userImage"
+                android:layout_marginRight="8dp"
+                android:layout_width="96dp"
+                android:padding="8dp"
+                android:layout_height="96dp"
+                android:src="@drawable/ic_launcher_background"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+            <TextView
+                android:id="@+id/issueTitle"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Issue Title"/>
+        </LinearLayout>
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/createdDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:text="Created Date"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="2dp"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:id="@+id/closedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Closed Date"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="2dp"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
